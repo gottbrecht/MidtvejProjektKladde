@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevator Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="building">
+    <div class="elevator-shaft">
+      <div class="elevator" id="elevator">
+        <div class="elevator-door"></div>
+      </div>
+    </div>
+    <div class="floors">
+      <button class="floor-btn" onclick="requestFloor(4)">4</button>
+      <button class="floor-btn" onclick="requestFloor(3)">3</button>
+      <button class="floor-btn" onclick="requestFloor(2)">2</button>
+      <button class="floor-btn" onclick="requestFloor(1)">1</button>
+      <button class="floor-btn" onclick="requestFloor(0)">0</button>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
