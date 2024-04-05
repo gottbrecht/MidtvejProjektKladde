@@ -36,12 +36,12 @@ function moveElevator() {
     isMoving = false;
     //Nulstiller mål-etagen
     targetFloor = null;
-    // Behandler resterende anmodninger i køen
+    //Behandler resterende anmodninger i køen
     handleFloorRequests();
-  }, 1000 * Math.abs(targetFloor - currentFloor)); // Forsinkelse afhængig af afstanden til mål.
+  }, 1000 * Math.abs(targetFloor - currentFloor)); //Forsinkelse afhængig af afstanden til mål.
 }
 
-// Funktion til at håndtere anmodninger fra bruger
+//Funktion til at håndtere anmodninger fra brugeren
 function handleFloorRequests() {
   //Sorter anmodningerne i køen, i stigende eller faldende rækkefølge
   floorRequests.sort((a, b) => (direction === 1 ? a - b : b - a));
